@@ -1,0 +1,23 @@
+{% extends 'header.html'%}
+{% block title %}Home Page{% endblock %}
+{% block content %}
+
+
+
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+      <div class="col-md-3 mb-2 mb-md-0">
+      </div>
+
+      <h1>Welcome to Truckit </h1>
+
+      <div class="col-md-3 text-end">
+        <a href="{% url 'login_view' %}" class="btn btn-outline-primary me-2" role="button">Login</a>
+        <a href="{% url 'register' %}" class="btn btn-primary" role="button">Sign-up</a>
+      </div>
+    </header>
+  </div>
+
+{% endblock %}
+
+
